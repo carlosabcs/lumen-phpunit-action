@@ -6,15 +6,11 @@ LABEL "com.github.actions.icon"="check-circle"
 LABEL "com.github.actions.color"="green"
 
 LABEL "repository"="https://github.com/carlosabcs/lumen-phpunit-action"
-LABEL "homepage"=""
-LABEL "maintainer"="Carlos Córdova"
+LABEL "homepage"="https://github.com/carlosabcs/lumen-phpunit-action"
+LABEL "maintainer"="Carlos Córdova <carlosab1802@gmail.com>"
 
-# ADD entrypoint.sh /entrypoint.sh
-# RUN chmod +x /entrypoint.sh
-# ENTRYPOINT ["/entrypoint.sh"]
 RUN composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
 RUN cp .env.example .env
-RUN php artisan config:clear
 RUN php artisan cache:clear
 RUN php artisan migrate:fresh --seed
 
