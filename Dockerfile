@@ -9,5 +9,5 @@ LABEL "repository"=""
 LABEL "homepage"=""
 LABEL "maintainer"=""
 
-ADD script.sh /script.sh
-ENTRYPOINT ["/script.sh"]
+ADD entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
