@@ -1,9 +1,6 @@
 #!/bin/sh -l
 
-apt install php-mysql
-apt install php7.0-mysql
-
-composer install --prefer-dist
+composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
 
 cp .env.example .env
 
