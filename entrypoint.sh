@@ -4,6 +4,8 @@ composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scr
 
 cp .env.example .env
 
+php artisan config:clear
+php artisan cache:clear
 php artisan migrate:fresh --seed
 
 php vendor/bin/phpunit
