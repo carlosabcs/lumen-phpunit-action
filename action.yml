@@ -1,0 +1,8 @@
+name: 'Lumen PHPUnit'
+description: 'A GitHub action to run your Lumen project's PHPUnit test suite.'
+branding:
+  icon: 'check-circle'
+  color: 'green'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
