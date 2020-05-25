@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
-apt-get install php-mysql
-apt-get install php7.0-mysql
+apt install php-mysql
+apt install php7.0-mysql
 
 composer install --prefer-dist
 
