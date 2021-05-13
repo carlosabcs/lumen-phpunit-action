@@ -6,3 +6,9 @@ branding:
 runs:
   using: "docker"
   image: "Dockerfile"
+
+inputs:
+  path:
+    description: 'Local path'
+    required: false
+    default: ''
